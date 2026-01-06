@@ -10,7 +10,7 @@ import "react-native-reanimated";
 
 import { onLogout } from "@/events/authEvents";
 import { useColorScheme } from "@/hooks/use-color-scheme";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   const router = useRouter();
@@ -24,7 +24,7 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <SafeAreaProvider style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "transparent" }} edges={["top", "left", "right"]}>
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen
@@ -34,7 +34,7 @@ export default function RootLayout() {
           <Stack.Screen name="home/index" options={{ headerShown: false }} />
         </Stack>
         <StatusBar translucent backgroundColor="transparent" />
-      </SafeAreaProvider>
+      </SafeAreaView>
     </ThemeProvider>
   );
 }

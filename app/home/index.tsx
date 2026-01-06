@@ -4,6 +4,8 @@ import { ScrollView, View } from "react-native";
 import GreetingCard from "@/components/homescreen/GreetingCard";
 import Header from "@/components/homescreen/Header";
 import RootLayout from "@/components/ui/RootLayout";
+import StatsCard from "@/components/homescreen/StatsCard";
+import StatsGrid from "@/components/homescreen/StatsGrid";
 
 const HomeScreen = () => {
   return (
@@ -12,6 +14,7 @@ const HomeScreen = () => {
         <Header />
         <View className="px-2 mt-5">
           <GreetingCard />
+          <StatsGrid />
         </View>
       </ScrollView>
     </RootLayout>
