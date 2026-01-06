@@ -4,7 +4,7 @@ import GlassTile from "../ui/GlassTile";
 
 const GreetingCard = () => {
   return (
-    <GlassTile>
+    <GlassTile className="flex-row justify-between">
       <View className="flex-1 gap-2">
         <Text className="font-bold text-[17px] text-white">
           Good Morning, Shivam!

@@ -1,8 +1,5 @@
-import {
-  isLiquidGlassSupported,
-  LiquidGlassView,
-} from "@callstack/liquid-glass";
 import React from "react";
+import { View } from "react-native";
 
 const GlassTile = ({
   children,
@@ -12,21 +9,16 @@ const GlassTile = ({
   className?: string;
 }) => {
   return (
-    <LiquidGlassView
-      style={[
-        { width: "100%", borderRadius: 20, borderWidth: 2, padding: 20 },
-        !isLiquidGlassSupported && {
-          backgroundColor: "rgba(255, 255, 255, 0.1)",
-          flexDirection: "row",
-          alignItems: "center",
-        },
-      ]}
+    <View
+      style={{
+        borderRadius: 20,
+        padding: 20,
+        backgroundColor: "rgba(255, 255, 255, 0.1)",
+      }}
       className={className}
-      interactive
-      effect="regular"
     >
       {children}
-    </LiquidGlassView>
+    </View>
   );
 };
 

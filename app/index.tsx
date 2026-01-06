@@ -4,7 +4,7 @@ import "../global.css";
 
 import GreetingCard from "@/components/homescreen/GreetingCard";
 import RootLayout from "@/components/ui/RootLayout";
-import Header from "../components/Header";
+import Header from "../components/homescreen/Header";
 
 const HomeScreen = () => {
   return (
