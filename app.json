@@ -4,7 +4,7 @@
     "slug": "crikify",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icons/icon.svg",
+    "icon": "./assets/images/icons/logo.png",
     "scheme": "crikify",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -15,15 +15,15 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#343433",
-        "foregroundImage": "./assets/images/icons/icon.svg"
+        "foregroundImage": "./assets/images/icons/logo.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.crikify"
+      "package": "com.crikify"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/icons/icon.svg",
+      "favicon": "./assets/images/icons/logo.png",
       "bundler": "metro"
     },
     "plugins": [
@@ -31,7 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/icons/icon.svg",
+          "image": "./assets/images/icons/logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#343433",
