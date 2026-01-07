@@ -3,10 +3,10 @@ import { ScrollView, View } from "react-native";
 
 import GreetingCard from "@/components/homescreen/GreetingCard";
 import Header from "@/components/homescreen/Header";
-import RootLayout from "@/components/ui/RootLayout";
-import StatsCard from "@/components/homescreen/StatsCard";
+import NewsContainer from "@/components/homescreen/NewsContainer";
+import ServiceGrid from "@/components/homescreen/ServiceGrid";
 import StatsGrid from "@/components/homescreen/StatsGrid";
-import ServiceCard from "@/components/homescreen/ServiceCard";
+import RootLayout from "@/components/ui/RootLayout";
 
 const HomeScreen = () => {
   return (
@@ -15,8 +15,10 @@ const HomeScreen = () => {
       <ScrollView>
         <View className="px-2 mt-5 gap-3">
           <GreetingCard />
+          
+          <NewsContainer />
           <StatsGrid />
-          <ServiceCard />
+          <ServiceGrid />
         </View>
       </ScrollView>
     </RootLayout>
