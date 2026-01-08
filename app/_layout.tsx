@@ -30,13 +30,8 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <SafeWrapper style={{ flex: 1, backgroundColor: "transparent" }}>
         <Provider>
-          <Stack>
-            <Stack.Screen name="index" options={{ headerShown: false }} />
-            <Stack.Screen
-              name="(auth)/login/index"
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen name="home/index" options={{ headerShown: false }} />
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="turfScreen" options={{ headerShown: true }} />
           </Stack>
           <StatusBar translucent backgroundColor="transparent" />
         </Provider>
@@ -44,6 +39,4 @@ export default function RootLayout() {
       </SafeWrapper>
     </ThemeProvider>
   );
-
-  
 }
