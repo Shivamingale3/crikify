@@ -15,9 +15,10 @@ const HomeScreen = () => {
       <ScrollView>
         <View className="px-2 mt-5 gap-3">
           <GreetingCard />
-          
+
           <NewsContainer />
           <StatsGrid />
+          <ServiceGrid />
           <ServiceGrid />
         </View>
       </ScrollView>

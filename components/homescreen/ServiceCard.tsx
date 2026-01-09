@@ -14,24 +14,14 @@ type Props = {
 };
 const ServiceCard = ({ imgSource, title, subtitle }: Props) => {
   return (
-    <GlassTile
-      className="items-center flex flex-1 flex-col h-[200px] "
-      style={{
-        borderRadius: 20,
-        borderColor: "white",
-        borderBottomWidth: 2,
-        borderLeftWidth: 2,
-        padding: 0,
-        paddingBottom: 10,
-      }}
-    >
+    <GlassTile className="items-center flex flex-1 flex-col h-[200px] pb-5">
       <View
         className=" bg-[#4585AD] w-full items-center flex-1 justify-center "
         style={{ borderTopLeftRadius: 20, borderTopRightRadius: 20 }}
       >
         <Image source={imgSource} />
       </View>
-      <View className="gap-1 items-center ">
+      <View className="gap-1 items-center pt-2">
         <Text className="text-blue-400 font-bold text-2xl">{title}</Text>
         <Text className="text-white font-semibold text-xl ">{subtitle}</Text>
         <Text className="text-blue-300  text-xs ">More About</Text>

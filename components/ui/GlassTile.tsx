@@ -19,7 +19,6 @@ const GlassTile = ({
 const styles = StyleSheet.create({
   container: {
     borderRadius: 20,
-    padding: 20,
     backgroundColor: "rgba(255, 255, 255, 0.1)",
   },
 });

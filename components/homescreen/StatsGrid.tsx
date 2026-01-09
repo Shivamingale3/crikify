@@ -1,12 +1,13 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { Images } from "@/assets/Images";
 import React from "react";
+import { FlatList, StyleSheet, View } from "react-native";
 import StatsCard from "./StatsCard";
 
 const StatsGrid = () => {
   const sampleData = [
-    { icon: "bolt", count: "12", name: "Tournaments" },
-    { icon: "", count: "145.6", name: "Strike Rate" },
-    { icon: "bolt", count: "89", name: "Wickets" },
+    { icon: Images.homescreen.turfServivce, count: "12", name: "Tournaments" },
+    { icon: Images.homescreen.strikeRate, count: "145.6", name: "Strike Rate" },
+    { icon: Images.homescreen.tournamentService, count: "89", name: "Wickets" },
   ];
   return (
     <View className="flex flex-row justify-between">

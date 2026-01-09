@@ -1,24 +1,26 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  ImageSourcePropType,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import GlassTile from "../ui/GlassTile";
-import { IconSymbol } from "../ui/icon-symbol";
 
 type Props = {
   count: String;
-  iconName: String;
+  iconName: ImageSourcePropType;
   statName: String;
 };
 const StatsCard = ({ count, iconName, statName }: Props) => {
   return (
-    <GlassTile
-      className="w-[31%] items-center gap-1 "
-      style={{ paddingVertical: 10, paddingHorizontal: 15 }}
-    >
+    <GlassTile className="w-[31%] items-center gap-1 p-5">
       <View className="mb-2">
-        <IconSymbol name="bolt" color="yellow" size={30} />
+        <Image source={iconName} className="w-28 h-28 object-contain" />
       </View>
       <Text style={styles.statsCount}>{count}</Text>
-      <Text style={{ color: "white", fontWeight: "600" }}>{statName}</Text>
+      <Text style={{ color: "white", fontWeight: "500" }}>{statName}</Text>
     </GlassTile>
   );
 };

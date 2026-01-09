@@ -4,5 +4,6 @@ export const Images = {
   homescreen: {
     turfServivce: require("./images/icons/homescreen/turf.png"),
     tournamentService: require("./images/icons/homescreen/tournament.png"),
+    strikeRate: require("./images/icons/homescreen/strike_rate.png"),
   },
 } as const;

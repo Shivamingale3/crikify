@@ -11,8 +11,8 @@ const AuthFormContainer = ({
   children: React.ReactNode;
 }) => {
   return (
-    <GlassTile className="items-center justify-center gap-6 w-[90%] py-10">
-      <GlassTile>
+    <GlassTile className="items-center justify-center gap-6 w-[90%] p-8">
+      <GlassTile className="p-5">
         <Image
           source={Images.logo}
           className="w-20 h-10"
